@@ -32,6 +32,7 @@ RUN pip3 install dgl-cu111==0.7.0 -f https://data.dgl.ai/wheels/repo.html
 
 # install PyG
 RUN pip3 install torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geometric -f https://data.pyg.org/whl/torch-1.9.1+cu111.html
+RUN pip3 install multidict attrs aiosignal yarl async_timeout idna_ssl
 RUN pip3 install pytorch-lightning
 
 RUN mkdir /working_dir
